@@ -1,0 +1,11 @@
+{
+ "name": "integration-avocado",
+ "version" : "0.0.1",
+ "dependencies": {
+  "iron-elements": "PolymerElements/iron-elements#^1.0.10",
+  "paper-elements": "PolymerElements/paper-elements#^1.0.7"
+ },
+ "resolutions": {
+  "polymer": "^1.4.0"
+ }
+}

@@ -1,0 +1,42 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
+
+<dom-module id="login-form">
+    <style>
+        paper-button {
+            margin-left: 2.6em;
+            margin-top: 1em;
+            background-color: var(--paper-light-blue-500);
+            color: #fff;
+            text-align: center;
+        }
+        paper-input {
+            --paper-input-container-focus-color: var(--paper-light-blue-500);
+        }
+        .card-content {
+            width: 11em;
+        }
+    </style>
+    <template>
+        <iron-ajax
+                url="https://avocado-backend-v1.appspot.com/v1/lead/orgapikey/"
+                method="POST"
+                content-type="application/json"
+                on-response="handleResponse">
+        </iron-ajax>
+
+        <paper-card>
+            <div class="card-content">
+                <div hidden$="[[isSucceeded]]">
+                    <paper-input value="{{name}}" required auto-validate error-message="Invalid input!" label="Your Name"></paper-input>
+                    <paper-input value="{{email}}" required auto-validate error-message="Invalid input!" label="Your Contact Email"></paper-input>
+                    <paper-button on-tap="_signUp">Sign Up</paper-button>
+                </div>
+                <span hidden$="[[!isSucceeded]]">Thanks!</span>
+            </div>
+        </paper-card>
+    </template>
+</dom-module>
+<script src="login-form.js"></script>
