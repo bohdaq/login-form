@@ -30,6 +30,10 @@
 		},
 
 		_signUp: function () {
+			var isValid = this.$.name.validate() && this.$.email.validate();
+			if(!isValid){
+				return;
+			}
 			var ajax = this.querySelector('iron-ajax');
 			ajax.url = ajax.url + this.getParameterByName('param');
 			
