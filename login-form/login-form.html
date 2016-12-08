@@ -24,6 +24,31 @@
             width: 90%;
             margin:  0 auto;
         }
+        .flex-container {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-item {
+            padding: 5px;
+            height: 20px;
+            margin: 10px;
+            line-height: 20px;
+            color: #999999;
+            font-weight: 400;
+            font-size: 2em;
+            text-align: center;
+            font-style: normal;
+            font-family: "Open Sans",sans-serif;
+
+        }
     </style>
     <template>
         <iron-ajax
@@ -33,9 +58,8 @@
                 on-response="handleResponse">
         </iron-ajax>
 
-        <paper-card>
+        <paper-card hidden$="[[isSucceeded]]">
             <div class="card-content">
-                <div hidden$="[[isSucceeded]]">
                     <paper-input id="name" value="{{name}}" required error-message="Invalid input!" label="Your Name"></paper-input>
                     <gold-email-input
                             id="email"
@@ -45,10 +69,11 @@
                             label="Your Contact Email">
                     </gold-email-input>
                     <paper-button on-tap="_signUp">Request Invite</paper-button>
-                </div>
-                <div flex horizontal layout center center-justified hidden$="[[!isSucceeded]]">Thank you for your interest. Please check your email for the invitation.</div>
             </div>
         </paper-card>
+        <div hidden$="[[!isSucceeded]]" class="flex-container">
+            <div class="flex-item">Thank you for your interest. Please check your email for the invitation.</div>
+        </div>
     </template>
 </dom-module>
 <script src="login-form.js"></script>
