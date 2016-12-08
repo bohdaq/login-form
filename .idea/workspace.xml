@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a58cb9-333e-4f8a-b7ae-bb3cbdd22d15" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-form/login-form.html" afterPath="$PROJECT_DIR$/login-form/login-form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login-form/login-form.js" afterPath="$PROJECT_DIR$/login-form/login-form.js" />
     </list>
     <ignored path="marketingsiteintegration.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="login-form.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login-form/login-form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="45" column="121" selection-start-line="45" selection-start-column="121" selection-end-line="45" selection-end-column="121" />
+            <state relative-caret-position="191">
+              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -269,12 +266,12 @@
       <option name="presentableId" value="Default" />
       <updated>1481101679942</updated>
       <workItem from="1481101681616" duration="3357000" />
-      <workItem from="1481189288933" duration="601000" />
+      <workItem from="1481189288933" duration="682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3958000" />
+    <option name="totallyTimeSpent" value="4039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -356,8 +353,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login-form/login-form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="45" column="121" selection-start-line="45" selection-start-column="121" selection-end-line="45" selection-end-column="121" />
+        <state relative-caret-position="191">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
           <folding />
         </state>
       </provider>
